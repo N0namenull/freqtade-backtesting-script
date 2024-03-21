@@ -22,7 +22,7 @@ echo "
 echo "List of running Docker containers:"
 docker ps --format "table {{.Names}}\t{{.Image}}"
 
-read -p "Enter the name of the Docker container: " container_name
+read -p "Enter the name of the Docker container or just press Enter if the name is freqtrade: " container_name
 
 default_container_name="freqtrade"
 

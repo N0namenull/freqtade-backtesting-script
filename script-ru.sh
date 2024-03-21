@@ -22,7 +22,7 @@ echo "
 echo "Список запущенных контейнеров Docker:"
 docker ps --format "table {{.Names}}\t{{.Image}}"
 
-read -p "Введите имя контейнера Docker: " container_name
+read -p "Введите имя контейнера Docker или нажмите Enter если название freqtrade: " container_name
 
 default_container_name="freqtrade"
 

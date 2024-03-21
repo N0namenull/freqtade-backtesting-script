@@ -57,7 +57,7 @@ if docker ps -a --format "{{.Names}}" | grep -q $container_name; then
     [[ -n $timeframe ]] && command="$command --timeframe $timeframe"
     [[ -n $max_open_trades ]] && command="$command --max-open-trades $max_open_trades"
     [[ -n $stake_amount ]] && command="$command --stake-amount $stake_amount"
-    [[ -n $p ]] && command="$command -p \"$p\""
+    [[ -n $p ]] && command="$command -p $p"
     [[ -n $config ]] && command="$command --config $config"
 
     if docker exec -it $container_name bash -c "$command"; then

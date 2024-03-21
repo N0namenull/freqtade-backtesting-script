@@ -28,6 +28,6 @@ chmod +x script-ru.sh
 #### English version
 
 ```bash
-chmod +x script-ru.sh
-./script-ru.sh
+chmod +x script-en.sh
+./script-en.sh
 ```
